@@ -15,7 +15,7 @@ function randomQuoteGen() {
       newDiv.innerHTML =
         '<img src="' +
         data.photo +
-        '" alt=" photo de ' +
+        '" alt=" photo of ' +
         data.author +
         '"> <p class="container_quote">' +
         data.quote +
@@ -36,7 +36,7 @@ function randomQuoteGen() {
         .then((info) => {
           let newP = document.createElement("p");
           newP.className = "container_age";
-          newP.innerHTML = "Age prédit: " + info.age;
+          newP.innerHTML = "Predicted age: " + info.age;
           let spanName = document.querySelector(".container_name");
 
           let containerDiv = document.createElement("div");
