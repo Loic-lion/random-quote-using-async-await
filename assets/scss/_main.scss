@@ -23,6 +23,22 @@ body {
     p {
       margin-bottom: 30px;
     }
+    .container_quote {
+      max-width: 800px;
+      padding: 10px;
+      border-radius: 15px;
+      font-size: 24px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.514);
+      box-shadow: 0px 0px 20px 0px white;
+    }
+    .container_name {
+      padding: 10px;
+      border-radius: 15px;
+      font-size: 18px;
+      background-color: rgba(255, 255, 255, 0.514);
+      box-shadow: 0px 0px 20px 0px white;
+    }
   }
   .random_button {
     font-size: 14px;
