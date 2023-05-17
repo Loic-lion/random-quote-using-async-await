@@ -143,7 +143,7 @@ body {
   font-family: "Dosis", sans-serif;
 }
 body .loader {
-  border: 16px solid #f3f3f3;
+  border: 16px solid rgba(243, 243, 243, 0.0941176471);
   border-radius: 50%;
   border-top: 16px solid rgb(80, 58, 109);
   border-bottom: 16px solid rgb(80, 58, 109);
@@ -247,4 +247,13 @@ body .random_button:hover {
   color: #4444ad;
   border: solid 2px #7a79d4;
   animation: none; /* Arrête l'animation au survol */
+}
+
+.container_age {
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.514);
+  box-shadow: 0px 0px 20px 0px white;
 }/*# sourceMappingURL=style.css.map */
