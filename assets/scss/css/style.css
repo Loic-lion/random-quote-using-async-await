@@ -130,9 +130,52 @@ table {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url("../../img/plage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
+}
+body div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body div img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 20px 0px white;
+}
+body div p {
+  margin-bottom: 30px;
+}
+body .random_button {
+  font-size: 14px;
+  color: #fff;
+  background-color: #7a79d4;
+  padding: 10px 30px;
+  border: solid #d3dfeb 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+body .random_button:hover {
+  transition: 1000ms;
+  padding: 10px 25px;
+  transform: translateY(0px);
+  background-color: #fff;
+  color: #4444ad;
+  border: solid 2px #7a79d4;
 }/*# sourceMappingURL=style.css.map */
