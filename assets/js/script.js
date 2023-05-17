@@ -3,6 +3,11 @@ const section = document.querySelector(".container");
 
 function randomQuoteGen() {
   section.innerHTML = "";
+
+  const loader = document.createElement("div");
+  loader.className = "loader";
+  section.appendChild(loader);
+
   fetch("https://thatsthespir.it/api")
     .then((response) => response.json())
     .then((data) => {
@@ -19,8 +24,13 @@ function randomQuoteGen() {
         "</p>";
 
       section.appendChild(newDiv);
+
+      section.removeChild(loader);
     })
-    .catch((error) => console.log("Il y a une erreur : ", error));
+    .catch((error) => {
+      section.removeChild(loader);
+      console.log("Il y a une erreur : ", error);
+    });
 }
 
 randomQuoteGen();
