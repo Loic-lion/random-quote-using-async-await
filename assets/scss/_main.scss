@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
+  font-family: "Dosis", sans-serif;
   div {
     display: flex;
     flex-direction: column;
@@ -55,6 +56,28 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+    animation: shake 0.5s 5s infinite;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: rotate(2deg);
+    }
+    20% {
+      transform: rotate(-2deg);
+    }
+    40% {
+      transform: rotate(2deg);
+    }
+    60% {
+      transform: rotate(-2deg);
+    }
+    80% {
+      transform: rotate(2deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
   }
 
   .random_button:hover {
@@ -64,5 +87,6 @@ body {
     background-color: #fff;
     color: #4444ad;
     border: solid 2px #7a79d4;
+    animation: none; /* Arrête l'animation au survol */
   }
 }
