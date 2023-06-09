@@ -13,4 +13,4 @@ __Le repo comprend:__
    * une images 
 ## Aperçu
 lien github pages : https://loic-lion.github.io/random-quote-using-async-await/
- 
+ ![alt tag](https://github.com/Loic-lion/random-quote-using-async-await/blob/main/assets/img/screenshot.png?raw=true)
